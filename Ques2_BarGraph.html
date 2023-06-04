@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab1_Q2</title>
+    <style>
+        .container{
+            background-color: lightgrey;
+            margin: auto;
+            width: 23%;
+            padding: 10px;
+        }
+        .graph{
+            display: inline-block;
+            background-color: white;
+            width: 40px;
+            height: 400px;
+            margin-left: 35px;
+            margin-right: 37px;
+        }
+        .graph div.range{
+            
+            background-color: gray;
+            width: 40px;
+            position: absolute;
+            bottom: 290px;
+            animation-name: example;
+            animation-duration: 2s;
+        }
+        #height1{
+            height: 100px;
+        }
+        #height2{
+            height: 200px;
+        }
+        #height3{
+            height: 350px;
+        }
+        @keyframes example {
+            0% {
+            height: 0px;
+            }
+            100% {
+                visibility: visible;
+            }
+        }
+        h1{
+            text-align: center;
+        }
+        span{
+            text-align: center;
+            margin-left: 35px;
+            margin-right: 48px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="graph">
+            <div class="range" id="height1">
+
+            </div>
+        </div>
+        <div class="graph">
+            <div class="range" id="height2">
+
+            </div>
+        </div>
+        <div class="graph">
+            <div class="range" id="height3">
+
+            </div>
+        </div>
+        <span>30%</span>
+        <span>40%</span>
+        <span>80%</span>
+        <h1>Bar Plot</h1>
+    </div>
+    
+</body>
+</html>
